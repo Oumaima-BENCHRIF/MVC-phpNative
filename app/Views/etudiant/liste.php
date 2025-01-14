@@ -25,14 +25,22 @@ if (isset($_GET['idfilier'])) {
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    
+    <link rel="icon" href="../../../public/img/avatar.svg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../../../public/assets/css/logo/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
     <title>Liste des Étudiants</title>
    
     <link rel="stylesheet" type="text/css" href="../../../public/assets/css/Etudiant/styleAcceuil.css">
     <link rel="stylesheet" type="text/css"  href="../../../public/assets/css/Etudiant/styleFooter.css">
 
+
+    
     <script>
         // Fonction pour rediriger la ligne entière vers une autre page
         function redirectToDetail(id) {

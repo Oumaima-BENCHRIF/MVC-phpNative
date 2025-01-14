@@ -1,5 +1,5 @@
 <header>
-
+<link rel="icon" href="../../../public/img/avatar.svg" type="image/x-icon">
     <link rel="stylesheet" href="../../../public/assets/css/Etudiant/styleMenu.css">
     <link rel="stylesheet" href="../../../public/assets/css/Etudiant/AjouterEtudiant.css">
 

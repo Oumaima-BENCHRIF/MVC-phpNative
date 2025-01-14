@@ -39,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <head>
     <title>Animated Login Form</title>
 
-
+    <link rel="icon" href="../../../public/img/avatar.svg" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="../../../public/assets/css/logo/style.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a81368914c.js"></script>
