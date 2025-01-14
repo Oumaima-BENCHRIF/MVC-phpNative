@@ -1,0 +1,166 @@
+/* Applique à tout le corps */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+/* Conteneur principal */
+.form-container {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+/* Styles du formulaire */
+form {
+    width: 100%;
+    max-width: 40%;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Éléments du formulaire */
+form label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+form input:focus, form select:focus {
+    border-color: #38d39f;
+    outline: none;
+}
+
+/* Message de feedback */
+.message {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.message.success {
+    background-color: #38d39f;
+}
+
+.message.error {
+    background-color: #e74c3c;
+}
+
+.message.show {
+    opacity: 1;
+}
+/* Bouton d'ajout */
+button {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: #38d39f;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #32b97a;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 900px) {
+    .form-container {
+        padding: 1rem;
+    }
+
+    form {
+        width: 100%;
+        max-width: 90%;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+}
+
+/* Conteneur principal des boutons */
+.button-container {
+    display: flex;
+    justify-content: center; /* Centre les boutons */
+    gap: 20px; /* Espacement entre les boutons */
+    width: 100%;
+    padding: 1rem;
+    margin-top: 30px;
+}
+
+
+
+.button-container a:hover {
+    background-color: #32be8f; /* Changement de couleur au survol */
+    transform: scale(1.05); /* Effet de zoom au survol */
+}
+
+
+/* Style pour le lien "Ajouter Etudiant" */
+a.logout-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #38d39f; /* Couleur principale */
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    margin: 2rem auto; /* Espacement au-dessus et en-dessous */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: fit-content;
+}
+a.logout-btn:hover {
+    background-color: #32b97a; /* Changement de couleur au survol */
+    transform: scale(1.05); /* Effet de zoom au survol */
+}
+
+a.logout-btn:active {
+    background-color: #28a06e; /* Couleur lorsqu'on clique */
+}
+a.logout-btn:focus {
+    outline: none; /* Supprime la bordure de focus */
+    box-shadow: 0 0 5px rgba(56, 211, 159, 0.7); /* Ombre au focus */
+}

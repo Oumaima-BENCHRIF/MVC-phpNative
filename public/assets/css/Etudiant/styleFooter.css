@@ -1,0 +1,22 @@
+/* Applique à tout le corps */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Conteneur principal */
+main {
+    flex: 1; /* Prend tout l'espace disponible */
+}
+
+/* Footer collé en bas */
+.bas {
+    text-align: center;
+    padding: 1rem;
+    background-color: #38d39f;
+    color: white;
+    font-size: 0.9rem;
+    position: relative;
+}

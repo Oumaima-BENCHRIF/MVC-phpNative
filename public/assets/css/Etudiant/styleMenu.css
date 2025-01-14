@@ -1,0 +1,120 @@
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* HEADER ET NAVIGATION */
+header {
+    background: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 2rem;
+}
+
+/* MENU PRINCIPAL */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    gap: 2rem; /* Augmenter l'espace entre le logo et les liens */
+}
+
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.logo img {
+    width: 60px; /* Augmenter la taille du logo pour une meilleure visibilité */
+    height: auto;
+}
+
+/* LIENS DE NAVIGATION */
+.menu-items {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.menu a:hover {
+    color: #f9f9f9;
+    transform: scale(1.1);
+}
+
+/* ICÔNE DE CONNEXION */
+.login-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+}
+
+.login-icon:hover {
+    transform: scale(1.1);
+}
+
+/* STYLISATION DU BOUTON "SE DÉCONNECTER" */
+.logout-btn {
+    background-color: #ff3b30; /* Couleur rouge vif pour attirer l'attention */
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.logout-btn:hover {
+    background-color: #ff4d47; /* Couleur rouge légèrement plus claire */
+    transform: scale(1.05); /* Légère augmentation de la taille au survol */
+}
+
+/* DESIGN RESPONSIVE */
+@media (max-width: 768px) {
+    /* Menu en mode colonne pour les petits écrans */
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    /* Menu items (liens) en mode colonne */
+    .menu-items {
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    /* Réduire l'espace entre le logo et les liens */
+    .logo {
+        margin-bottom: 0.5rem;
+    }
+
+    /* Ajuster la taille du logo pour les petits écrans */
+    .logo img {
+        width: 40px;
+    }
+}

@@ -1,0 +1,200 @@
+/* Réinitialisation */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Titre principal */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Conteneur principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Table des filières */
+.student-table {
+    width: 90%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.student-table th, .student-table td {
+    padding: 15px 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.student-table th {
+    background-color: #38d39f;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+.student-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.student-table tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.student-table td {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Bouton consulter */
+.student-table a {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #38d39f;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.student-table a:hover {
+    background-color: #2c3e50;
+}
+
+/* Footer */
+.bas {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.bas a {
+    color: #38d39f;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.bas a:hover {
+    color: white;
+}
+
+/* Responsive */
+@media screen and (max-width: 900px) {
+    .student-table {
+        width: 100%;
+    }
+
+    .student-table th, .student-table td {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+/* Style pour le lien "Ajouter Etudiant" */
+a.add-student {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #38d39f; /* Couleur principale */
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    margin: 2rem auto; /* Espacement au-dessus et en-dessous */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: fit-content;
+}
+
+a.add-student:hover {
+    background-color: #32b97a; /* Changement de couleur au survol */
+    transform: scale(1.05); /* Effet de zoom au survol */
+}
+
+a.add-student:active {
+    background-color: #28a06e; /* Couleur lorsqu'on clique */
+}
+
+/* Ajout d'une animation de mise en évidence sur le lien */
+a.add-student:focus {
+    outline: none; /* Supprime la bordure de focus */
+    box-shadow: 0 0 5px rgba(56, 211, 159, 0.7); /* Ombre au focus */
+}
+
+/* Conteneur principal des boutons */
+.button-container {
+    display: flex;
+    justify-content: center; /* Centre les boutons */
+    gap: 20px; /* Espacement entre les boutons */
+    width: 100%;
+    padding: 1rem;
+    margin-top: 30px;
+}
+
+
+
+.button-container a:hover {
+    background-color: #32be8f; /* Changement de couleur au survol */
+    transform: scale(1.05); /* Effet de zoom au survol */
+}
+
+
+/* Style pour le lien "Ajouter Etudiant" */
+a.logout-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #38d39f; /* Couleur principale */
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    margin: 2rem auto; /* Espacement au-dessus et en-dessous */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: fit-content;
+}
+a.logout-btn:hover {
+    background-color: #32b97a; /* Changement de couleur au survol */
+    transform: scale(1.05); /* Effet de zoom au survol */
+}
+
+a.logout-btn:active {
+    background-color: #28a06e; /* Couleur lorsqu'on clique */
+}
+a.logout-btn:focus {
+    outline: none; /* Supprime la bordure de focus */
+    box-shadow: 0 0 5px rgba(56, 211, 159, 0.7); /* Ombre au focus */
+}
